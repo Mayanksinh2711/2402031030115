@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learnify UI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #4f46e5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #4338ca;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .main-container {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      min-height: calc(100vh - 120px);
+    }
+    .sidebar {
+      background-color: #e0e7ff;
+      padding: 20px;
+    }
+    .sidebar h3 {
+      margin-bottom: 10px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    .dashboard {
+      padding: 20px;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h2 {
+      margin-bottom: 10px;
+    }
+    .search-bar {
+      margin: 20px 0;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .tools, .workshop, .account, .onboarding {
+      margin-bottom: 40px;
+    }
+    footer {
+      background-color: #4f46e5;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Learnify</h1>
+    <p>Welcome to Learnify Learning Platform</p>
+  </header>
+
+  <nav>
+    <div><strong>Menu</strong></div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Tools</a></li>
+      <li><a href="#">Workshop</a></li>
+      <li><a href="#">Account</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-container">
+    <aside class="sidebar">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">My Tools</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </aside>
+
+    <main class="dashboard">
+      <section class="onboarding card">
+        <h2>Welcome & Onboarding</h2>
+        <p>Start your learning journey with a few steps and personalize your experience.</p>
+      </section>
+
+      <section class="search-bar">
+        <input type="text" placeholder="Search for courses, tools, or topics...">
+      </section>
+
+      <section class="tools card">
+        <h2>Tools</h2>
+        <p>Access all your learning and productivity tools from here.</p>
+      </section>
+
+      <section class="workshop card">
+        <h2>Workshops</h2>
+        <p>Join interactive workshops to enhance your knowledge and skills.</p>
+      </section>
+
+      <section class="account card">
+        <h2>My Account</h2>
+        <p>Manage your profile, preferences, and subscription settings here.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 Learnify. All rights reserved.</p>
+  </footer>
+</body>
+</html>
